@@ -24,7 +24,13 @@ export default function Player({
 
   if (isEditing) {
     editablePlayerName = (
-      <input type="text" value={playerName} required onChange={handleChange} />
+      <input
+        type="text"
+        value={playerName}
+        maxLength={8}
+        required
+        onChange={handleChange}
+      />
     );
   }
 
